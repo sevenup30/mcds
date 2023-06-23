@@ -6,7 +6,7 @@ ul {
     width: 100%;
     margin: auto;
     height: clamp(100px, 100%, 200px);
-    background-color: #026E81;
+    background-color: #FFF6C4;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +15,7 @@ ul {
 
 }
 #header h1{
-    color: #FF9933;
+    color: #6C66B3;
     font-weight: bold;
     font-size: clamp(2em, 3em, 4em);
 }

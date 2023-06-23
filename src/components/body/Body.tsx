@@ -1,4 +1,4 @@
-'use client';
+
 import { ReactNode , useState } from 'react';
 import './Body.css';
 import About from './about/About';

@@ -2,7 +2,6 @@
 import { ReactNode , useState } from 'react';
 import './Body.css';
 import About from './about/About';
-import Contact from '../header/contact/Contact';
 import CV from './cv/CV';
 import XP from './xp/XP';
 

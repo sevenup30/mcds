@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavItemClick }) => {
         <li onClick={() => handleClick('cv')}>
         <a href="#">CV</a>
         </li>
-        <li><a href="https://linkedin.com/in/martial-carriere">Linkedin</a></li>
+        <li><a target="_blank" href="https://linkedin.com/in/martial-carriere">Linkedin</a></li>
         <li><a href="mailto:carriere.martial@gmail.com">carriere.martial@gmail.com</a></li>
     </ul></nav>
     </div>

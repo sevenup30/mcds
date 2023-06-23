@@ -10,14 +10,14 @@ const experiences = [
 const XP = () => {
     return (<div className="xp main-component">
         {experiences.reverse().map((xp, index) => (
-          <div className="experience">
+          <div className="experience" key={xp.name}>
               <div className='logo_container'><div className={"logo " + xp.classname}></div><h3>{xp.name}</h3></div>
               <h2>{xp.job}</h2>
               
               <h4>{xp.start.getMonth()}/{xp.start.getFullYear()} - {xp.end.getMonth()}/{xp.end.getFullYear()} </h4>
               <p>{xp.summary}</p>
               <ul>{xp.bulletpoints.map((bp,index) => {
-                return (<li>{bp}</li>)
+                return (<li key={bp}>{bp}</li>)
               })}</ul>
           </div>
         ))}

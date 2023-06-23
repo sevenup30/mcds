@@ -1,0 +1,46 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+#header {
+    width: 100%;
+    margin: auto;
+    height: clamp(100px, 100%, 200px);
+    background-color: #026E81;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+
+}
+#header h1{
+    color: #FF9933;
+    font-weight: bold;
+    font-size: clamp(2em, 3em, 4em);
+}
+
+#navbar {
+    text-transform: capitalize;
+}
+#navbar li{
+    display: inline;
+    font-size: clamp(1em, 1,5em,2em);
+    margin-left: 45px;
+}
+
+@media (max-width: 880px)  {
+    #header {
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    #header h1 {
+        font-size: 2em;
+    }
+    #navbar li {
+        display: block;
+        margin: 10px 0 0 0;
+        font-size: 1em;
+    }
+}
+

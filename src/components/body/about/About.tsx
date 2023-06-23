@@ -1,0 +1,19 @@
+import { url } from "inspector";
+const myAge = new Date().getFullYear() - 1991;
+const About = () => {
+    return <div className="about main-component">
+     <div className='portrait_img'></div>  
+     <div className="about_paragraph">
+    <p className="section__paragraph">Bonjour, et bienvenu sur mon site. Je m'appelle Martial, j'ai {myAge} ans,</p>
+    <p className="section__paragraph"> et je vis dans une magnifique région, Les Cévennes! </p>
+    <p className="section__paragraph">Je suis passionné par les nouvelles technologies, depuis mes 2 ans où je me lever la nuit pour allumer le magnétoscope (ouch! ça nous vieillit tout ça) en passant par mes 11 ans où j'ai eu mon premier ordinateur et mes 13 ans avec la découverte du site du zéro</p>
+    <p className="section__paragraph">Depuis que j'ai 18 ans, j'accompagne les entreprises dans leurs transformations digitales. Ma curiosité et ma soif d'apprendre m'ont permis d'évoluer à travers ce métier passionnant .</p>
+    <p className="section__paragraph">J'ai commencé par du réseau, de l'administration système, puis du développement, backend, frontend, du DevOps et au fil de mes expériences et des rencontres me voilà aujourd'hui avec une multitude de casquettes et de compétences, mais surtout une passion toujours aussi flamboyante.</p>
+    <br/>
+    <p className="section__paragraph">Voilà pour la partie qui vous a surement amené jusqu'ici, mais au-delà de l'informatique, le sport, mes 3 enfants et la musique, occupent le temps qu'il me reste! </p>
+    <p className="section__paragraph">Si vous souhaitez en savoir plus, je vous invite à aller sur l'onglet expériences où je détaille mes différentes épopées professionnelles !</p>
+    </div> 
+    </div>;
+  };
+  
+  export default About;

@@ -8,11 +8,6 @@
     text-align: center;
     animation: fadeIn 2s;
 }
-
-.about {
-    display: flex;
-    flex-direction: row;
-}
 .portrait_img {
     background-image: url('./assets/portrait.png');
     aspect-ratio: 3/4;

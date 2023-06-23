@@ -1,4 +1,4 @@
-import { url } from "inspector";
+import './About.css';
 const myAge = new Date().getFullYear() - 1991;
 const About = () => {
     return <div className="about main-component">

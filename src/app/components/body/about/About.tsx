@@ -1,3 +1,4 @@
+'use client';
 import './About.css';
 import { useTranslation } from '../../../provider/TranslationProvider';
 

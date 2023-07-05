@@ -11,9 +11,9 @@ const App: React.FC = () => {
   const handleNavClick = (componentName: string) => {
     setActiveComponent(componentName);
   };
-
+  const browser_lague = (typeof window !== "undefined" && window.navigator.language == "fr-FR") ? "fr" : "en";
   return (
-    <TranslationProvider initialLocale="en">
+    <TranslationProvider initialLocale={browser_lague}>
       <div>
         <Header onNavItemClick={handleNavClick} />
         <Body activeComponent={activeComponent} />

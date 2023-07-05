@@ -1,0 +1,23 @@
+{
+    "about": "about",
+"xp": "experience",
+"cv": "CV",
+"contact": "contact",
+"about1": "Hello, and welcome to my website. My name is Martial, I am {myAge} years old,",
+"about2": "and I live in a beautiful region, the Cévennes!",
+"about3": "I am passionate about new technologies, starting from the age of 2 when I used to wake up at night to turn on the VCR, to when I was 11 and opened my first computer, and at the age of 13 when I discovered the Site du Zéro.",
+"about4": "Since I turned 18, I have been assisting companies in their digital transformations and the evolution of their IT systems. My curiosity and thirst for learning have allowed me to grow in this exciting profession.",
+"about5": "I started with networking, system administration, then moved on to development, backend, frontend, DevOps, and through my experiences and encounters, I now have a multitude of roles and skills, but above all, a passion that still burns bright.",
+"about6": "That covers the part that probably brought you here, but beyond computer science, sports, my 3 children, and music occupy the remaining time I have!",
+"about7": "If you want to know more, I invite you to go to the 'experience' section where I detail my various professional adventures!",
+"dc": "In a Parisian scale-up, I joined a team to work on the overhaul of their application towards a new architecture. I participated in the development of an IAM module with Keycloak, a data lake, and an internal Python library.",
+"dc_title": "Python Developer",
+"lp_csmsi":"In the automation team, I contributed to the development of a cloud provider application using Python Django, which allows La Poste's business units to deploy, among other things, VMs, databases, VIPs, etc., in La Poste's two private data centers. I developed a workflow engine in Python coupled with Ansible Tower, performed the migration of the application from IaaS to PaaS, implemented CI/CD pipelines on GitLab, set up a georeplicated PSQL cluster, and many other tasks.",
+"lp_csmsi_title":  "Python Developer - DevOps",
+"lp_bscc": "In the 'Client Portals' foundation, I first joined the MCO team, where we had to ensure the proper functioning and evolution of about ten applications. In parallel, I containerized all the projects in the foundation to improve the development framework. Later on, I worked on the redesign of the data repository for the entire foundation (about 20 applications). This data repository, developed in PHP with Symfony, retrieves millions of data every night, stores them in an Oracle database, and provides them via REST APIs with GraphQL. I also worked on various new projects and a Python-based RPA project.",
+"lp_bscc_title": "Lead Dev - DevOps",
+"imprimerie": "In a commercial printing company, I was initially responsible for modernizing their IT infrastructure. This involved migrating local workstations to an ESX server, setting up a development server, implementing backups, etc. Later on, I developed their new B2B online store for privileged clients (Suez, Renault, Roady, Initial, etc.). This custom e-commerce platform allowed clients to personalize their orders online, and the orders were automatically integrated into our production flow and delivered within the shortest possible timeframes.",
+"imprimerie_title": "Lead Dev - DevOps",
+"looki": "As an apprentice at this new start-up specializing in browser-based games (Desert Operation, Empire Universe...), I was responsible for creating their internal network, development servers, and Active Directory domains. I also learned development by working on the backend of a new game.",
+"looki_title": "Apprentice System & Network Administrator / Backend Developer"
+}

@@ -1,7 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import Header from "@/components/header/Header";
-import Body from "@/components/body/Body";
+import Header from "./components/header/Header";
+import Body from "./components/body/Body";
+import { TranslationProvider } from './provider/TranslationProvider'
+
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState('about');
@@ -11,10 +13,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <Header onNavItemClick={handleNavClick} />
-      <Body activeComponent={activeComponent} />
-    </div>
+    <TranslationProvider initialLocale="en">
+      <div>
+        <Header onNavItemClick={handleNavClick} />
+        <Body activeComponent={activeComponent} />
+      </div>
+    </TranslationProvider>
   );
 };
 export default App;

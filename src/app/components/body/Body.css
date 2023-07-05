@@ -1,0 +1,47 @@
+#body {
+    padding: 0 clamp(10px,20%,200px) 0 clamp(10px,20%,200px);
+    animation: fadeIn 5s;
+    height: 100%;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.main-component {
+    padding: 5% 15px 0 15px;
+    text-align: center;
+    animation: fadeIn 2s;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #E21D76, #76E21D);
+    border-image-slice: 1;
+
+}
+.portrait_img {
+    background-image: url('./assets/portrait.png');
+    aspect-ratio: 3/4;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.gradiant-border {
+    background-color: var(--main-black-color) ;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #E21D76, #76E21D);
+    border-image-slice: 1;
+}

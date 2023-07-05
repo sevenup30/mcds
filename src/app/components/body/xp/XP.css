@@ -34,3 +34,8 @@
 .imprimerieclement {
     background-image: url('../assets/imprimerieclement.jpg');
 }
+.xp h2 {
+    background: -webkit-linear-gradient(45deg, #E21D76, #76E21D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

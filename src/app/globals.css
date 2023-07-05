@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root {
+  --main-black-color: #202124;
+  --main-text-color: #fff;
+}
+
+
+
 body{
-  background: #FFFADE;
-  color: #6C66B3;
+  background: var(--main-black-color);
+  color: var(--main-text-color);
   margin: 0;
   line-height: inherit;
   animation: fadeIn 2s;
+  letter-spacing: 2px;
+  font-family: 'Roboto' ;
+}
+h1, h2, h3, h4 {
+  font-family: 'Archivo Black';
 }
 a {
   text-decoration: none;

@@ -1,0 +1,26 @@
+
+.contact-form, .form-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-component {
+    border: 1px solid transparent;
+    background-color: var(--main-black-color);
+    box-shadow: none;
+}
+.contact-form input {
+    width: 60%;
+    
+}
+.contact-form button{
+    margin: auto;
+    width: 30%;
+}
+
+.contact-form input, button {
+    height: 70px;
+    letter-spacing: 2px;
+    margin: 10px 0 0 0;
+    color: #76E21D;
+}

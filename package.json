@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^11.0.0",
     "next": "15.2.0",
     "prismjs": "^1.29.0",
     "react": "^19.0.0",

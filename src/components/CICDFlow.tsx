@@ -137,7 +137,7 @@ const CICDFlow = () => {
 }
 
 // Helper function to render stage-specific icons
-const getStageIcon = (stageId, x, y) => {
+const getStageIcon = (stageId: string, x: number, y: number) => {
     switch (stageId) {
         case "code":
             return (

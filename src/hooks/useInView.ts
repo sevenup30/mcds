@@ -20,7 +20,7 @@ export const useInView = (ref: React.RefObject<Element>): boolean => {
         observer.unobserve(ref.current);
       }
     };
-  }, [ref]);
+  }, [ref.current]);
 
   return isInView;
 };

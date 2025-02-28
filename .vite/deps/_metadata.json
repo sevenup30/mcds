@@ -1,8 +1,55 @@
 {
-  "hash": "693185a7",
+  "hash": "126a9c1c",
   "configHash": "0a724401",
-  "lockfileHash": "e3b0c442",
-  "browserHash": "33855e76",
-  "optimized": {},
-  "chunks": {}
+  "lockfileHash": "ace86ad2",
+  "browserHash": "87eea51b",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "d0766593",
+      "needsInterop": true
+    },
+    "prismjs": {
+      "src": "../../node_modules/prismjs/prism.js",
+      "file": "prismjs.js",
+      "fileHash": "4f7302af",
+      "needsInterop": true
+    },
+    "prismjs/components/prism-typescript": {
+      "src": "../../node_modules/prismjs/components/prism-typescript.js",
+      "file": "prismjs_components_prism-typescript.js",
+      "fileHash": "14c3f33e",
+      "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "de49c7da",
+      "needsInterop": false
+    },
+    "prismjs/components/prism-python": {
+      "src": "../../node_modules/prismjs/components/prism-python.js",
+      "file": "prismjs_components_prism-python.js",
+      "fileHash": "33c468b1",
+      "needsInterop": true
+    },
+    "next/image": {
+      "src": "../../node_modules/next/image.js",
+      "file": "next_image.js",
+      "fileHash": "61fbc1ab",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-SGVWXKAT": {
+      "file": "chunk-SGVWXKAT.js"
+    },
+    "chunk-2GK3IQSO": {
+      "file": "chunk-2GK3IQSO.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
 }

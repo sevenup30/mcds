@@ -3,10 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "../translations";
+import { LanguageTranslations } from "@/translations/types";
 
 export default function Main() {
     const { language } = useLanguage();
-    const t = translations[language]
+    const t: LanguageTranslations = translations[language as keyof typeof translations];
     const words = [
         { text: "e-commerce", color: "primary", shadow: "rgba(21,101,192,1)" },
         { text: t.main.softwares, color: "secondary", shadow: "rgba(156,39,176,1)" },
@@ -35,7 +36,7 @@ export default function Main() {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [isAnimating]);
+    }, [isAnimating, words.length]);
 
     return (
         <div className="flex w-full pl-1 pr-1 h-full justify-center">

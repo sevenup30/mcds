@@ -65,7 +65,7 @@ interface BusinessITTranslations {
   expertise: string;
 }
 
-interface LanguageTranslations {
+export interface LanguageTranslations {
   nav: NavTranslations;
   main: MainTranslations;
   development: DevelopmentTranslations;

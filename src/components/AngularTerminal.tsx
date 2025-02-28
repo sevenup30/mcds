@@ -29,7 +29,7 @@ console.log(getProject());
 `
 
 export default function TypeScriptTerminal() {
-    const typedCode = useTypewriter(typescriptCode, 10)
+    const typedCode = useTypewriter({text: typescriptCode, speed: 10})
   
     useEffect(() => {
       requestAnimationFrame(() => {

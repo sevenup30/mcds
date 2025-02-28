@@ -1,18 +1,30 @@
+'use client'
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import Image from 'next/image';
 import { translations } from '../translations';
 
 const Header = () => {
-    const { language, toggleLanguage } = useLanguage();
+    const { language, toggleLanguage } = useLanguage() as { language: keyof typeof translations, toggleLanguage: () => void };
 
     return (
         <div className="fixed w-full bg-bg/70 backdrop-blur-sm top-0 left-0 z-[1000] h-[75px]">
             <header className="flex items-center justify-between text-primary py-2 text-center h-full">
                 <div className="flex flex-col gap-2">
-                    <img src="/img/logo_2.png" alt="Logo 2" className="w-8 h-auto" />
-                    <img src="/img/mcds.png" alt="Martial Carriere Development Solutions" className="w-8 h-auto" />
+                    <Image
+                        src="/img/logo_2.png"
+                        alt="Logo 2"
+                        width={32}
+                        height={32}
+                    />
+                    <Image
+                        src="/img/mcds.png"
+                        alt="mcds"
+                        width={32}
+                        height={32}
+                    />
                 </div>
-             
+
                 <div className="flex-1 flex justify-center items-center gap-8">
                     <a href="#development">{translations[language].nav.development}</a>
                     <a href="#ops">{translations[language].nav.ops}</a>

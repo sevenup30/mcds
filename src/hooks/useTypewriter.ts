@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 
-export const useTypewriter = (text, speed = 10) => {
-  const [displayText, setDisplayText] = useState('');
+interface UseTypewriterProps {
+  text: string;
+  speed?: number;
+}
+
+export const useTypewriter = ({ text, speed = 10 }: UseTypewriterProps): string => {
+  const [displayText, setDisplayText] = useState<string>('');
 
   useEffect(() => {
     let i = 0;

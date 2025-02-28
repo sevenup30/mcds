@@ -20,7 +20,7 @@ def get_project() -> Dict[str, str]:
 print(get_project())`
 
 export default function PythonTerminal() {
-  const typedCode = useTypewriter(pythonCode, 10)
+  const typedCode = useTypewriter({text: pythonCode, speed:10})
 
   useEffect(() => {
     requestAnimationFrame(() => {

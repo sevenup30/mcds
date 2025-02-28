@@ -1,4 +1,6 @@
-export const translations = {
+
+import { Translations } from './types';
+export const translations: Translations = {
     fr: {
         nav: {
             development: 'Développement',

@@ -3,10 +3,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "../translations";
 import PythonTerminal from "./PythonTerminal";
 import AngularTerminal from "./AngularTerminal";
+import { DevelopmentTranslations, Translations } from "@/translations/types";
 
 const Development = () => {
-    const { language } = useLanguage();
-    const t = translations[language].development;
+    const { language }: { language: keyof Translations } = useLanguage();
+    const t: DevelopmentTranslations = translations[language].development;
 
     return (
         <div className="h-screen p-16 box-border text-white mt-24">

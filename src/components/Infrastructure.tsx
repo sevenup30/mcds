@@ -5,7 +5,7 @@ import InfrastructureAnimation from './InfrastructureAnimation';
 
 const Infrastructure = () => {
     const { language } = useLanguage();
-    const t = translations[language].infrastructure;
+    const t = translations[language as keyof typeof translations].infrastructure;
 
     return (
         <div className="h-screen p-16 box-border text-white">

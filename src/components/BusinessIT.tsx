@@ -2,10 +2,11 @@ import React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "../translations";
 import BusinessITAnimation from "./BusinessITAnimation";
+import { BusinessITTranslations } from "@/translations/types";
 
 const BusinessIT = () => {
-    const { language } = useLanguage();
-    const t = translations[language].businessIT;
+    const { language }: { language: keyof typeof translations } = useLanguage();
+    const t: BusinessITTranslations = translations[language].businessIT;
 
     return (
         <div className="h-screen p-16 box-border text-white">

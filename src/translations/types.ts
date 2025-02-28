@@ -1,11 +1,11 @@
-interface NavTranslations {
+export interface NavTranslations {
   development: string;
   ops: string;
   infrastructure: string;
   businessIt: string;
 }
 
-interface MainTranslations {
+export interface MainTranslations {
   title: string;
   subtitle: string;
   softwares: string;
@@ -14,12 +14,12 @@ interface MainTranslations {
   yourProjects: string;
 }
 
-interface DevelopmentTranslations {
+export interface DevelopmentTranslations {
   title: string;
   description: string;
 }
 
-interface OpsFeatures {
+export interface OpsFeatures {
   build: string;
   ci: string;
   cd: string;
@@ -27,14 +27,14 @@ interface OpsFeatures {
   containers: string;
 }
 
-interface OpsTranslations {
+export interface OpsTranslations {
   title: string;
   description: string;
   features: OpsFeatures;
   expertise: string;
 }
 
-interface InfrastructureFeatures {
+export interface InfrastructureFeatures {
   cloud: string;
   network: string;
   server: string;
@@ -42,14 +42,14 @@ interface InfrastructureFeatures {
   storage: string;
 }
 
-interface InfrastructureTranslations {
+export interface InfrastructureTranslations {
   title: string;
   description: string;
   features: InfrastructureFeatures;
   expertise: string;
 }
 
-interface BusinessITFeatures {
+export interface BusinessITFeatures {
   workstation: string;
   server: string;
   email: string;
@@ -58,7 +58,7 @@ interface BusinessITFeatures {
   support: string;
 }
 
-interface BusinessITTranslations {
+export interface BusinessITTranslations {
   title: string;
   description: string;
   features: BusinessITFeatures;

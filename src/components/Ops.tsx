@@ -5,7 +5,7 @@ import { translations } from '../translations';
 
 const Ops = () => {
     const { language } = useLanguage();
-    const t = translations[language].ops;
+    const t = translations[language as keyof typeof translations].ops;
 
     return (
         <div className="h-screen p-16 box-border text-white">

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "framer-motion": "^11.0.0",
     "next": "15.2.0",
     "prismjs": "^1.29.0",

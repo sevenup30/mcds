@@ -39,15 +39,15 @@ export default function Main() {
     }, [isAnimating, words.length]);
 
     return (
-        <div className="flex w-full pl-1 pr-1 h-full justify-center">
-            <div className="w-6/10">
+        <div className="flex flex-col-reverse md:flex-row w-full px-4 md:px-1 h-full justify-center">
+            <div className="w-full md:w-6/10 mt-8 md:mt-0">
                 <div className="flex flex-col h-full place-content-center text-center gap-4">
-                    <h1>{t.main.title}</h1>
-                    <h2>
+                    <h1 className="text-2xl md:text-4xl">{t.main.title}</h1>
+                    <h2 className="text-xl md:text-2xl">
                         {t.main.subtitle}{" "}
                         {finalWord ? (
                             <span
-                                className={`text-6xl mt-2 font-bold text-${words[words.length - 1].color} inline-block`}
+                                className={`text-3xl md:text-6xl mt-2 font-bold text-${words[words.length - 1].color} inline-block`}
                                 style={{
                                     filter: `drop-shadow(0px 0px 23px ${words[words.length - 1].shadow})`
                                 }}
@@ -58,7 +58,7 @@ export default function Main() {
                             <AnimatePresence mode="wait">
                                 <motion.span
                                     key={currentWord}
-                                    className={`text-6xl mt-2 font-bold text-${words[currentWord].color} inline-block`}
+                                    className={`text-3xl md:text-6xl mt-2 font-bold text-${words[currentWord].color} inline-block`}
                                     style={{
                                         filter: `drop-shadow(0px 0px 23px ${words[currentWord].shadow})`
                                     }}
@@ -74,10 +74,14 @@ export default function Main() {
                     </h2>
                 </div>
             </div>
-            <div className="w-4/10">
+            <div className="w-full md:w-4/10 flex justify-center md:block">
                 <div className="flex flex-col items-center justify-center">
-                    <img src="/img/logo_1.png" className="h-8/12" alt="MCDS Logo" />
-                    <h1 className="text-primary -ml-22">MCDS</h1>
+                    <img
+                        src="/img/logo_1.png"
+                        className="h-48 md:h-8/12 w-auto"
+                        alt="MCDS Logo"
+                    />
+                    <h1 className="text-primary text-2xl md:text-4xl md:-ml-22">MCDS</h1>
                 </div>
             </div>
         </div>

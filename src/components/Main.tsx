@@ -42,8 +42,8 @@ export default function Main() {
         <div className="flex flex-col-reverse md:flex-row w-full px-4 md:px-1 h-full justify-center">
             <div className="w-full md:w-6/10 mt-8 md:mt-0">
                 <div className="flex flex-col h-full place-content-center text-center gap-4">
-                    <h1 className="text-2xl md:text-4xl">{t.main.title}</h1>
-                    <h2 className="text-xl md:text-2xl">
+                    <h1 className="text-sm sm:text-1xl md:text-4xl">{t.main.title}</h1>
+                    <h2 className="text-sm sm:text-xl md:text-2xl">
                         {t.main.subtitle}{" "}
                         {finalWord ? (
                             <span

@@ -16,8 +16,8 @@ const typescriptCode = `interface MCDSProject {
 
 function getProject(): MCDSProject {
   return {
-    name: "MCDS Mobile App",
-    description: "Develop a mobile app for MCDS clients",
+    name: "MCDS Frontend",
+    description: "MCDS Frontend",
     manager: "Martial CARRIERE",
     startDate: "2025-07-01",
     endDate: "2025-12-31"
@@ -36,7 +36,7 @@ export default function TypeScriptTerminal() {
   }, [typedCode])
 
   return (
-    <div className="bg-[#1e1e1e] rounded-lg shadow-lg overflow-hidden max-w-2xl w-full h-[500px]">
+    <div className="bg-[#1e1e1e] rounded-lg shadow-lg overflow-hidden max-w-2xl w-full h-[520px]">
       {/* VS Code-like title bar */}
       <div className="bg-[#323233] px-4 py-2 flex items-center justify-between">
         <div className="flex items-center gap-2">

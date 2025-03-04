@@ -11,7 +11,7 @@ const pythonCode = `from typing import Dict
 def get_project() -> Dict[str, str]:
     return {
         "name": "MCDS Website Redesign",
-        "description": "Redesign the MCDS corporate website",
+        "description": "MCDS backend",
         "manager": "Martial CARRIERE",
         "start_date": "2025-01-01",
         "end_date": "2025-06-30"
